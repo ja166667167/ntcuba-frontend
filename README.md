@@ -1,6 +1,6 @@
 # Ntcuba
 
-Jack test 2021/08/30
+i am no.1
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.3.
@@ -28,3 +28,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
