@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Run prettier for autoformating code
+npm run autoformat
+
+# Run 'ng lint'
+npm run lint

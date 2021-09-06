@@ -1,0 +1,10 @@
+# Package Manager
+package.json
+package-lock.json
+
+# Angular-related
+/dist
+**/assets/**/*
+
+# docs
+**/*.md
