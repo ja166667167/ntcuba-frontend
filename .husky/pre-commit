@@ -4,5 +4,8 @@
 # Run prettier for autoformating code
 npm run autoformat
 
+# Git Add
+git add .
+
 # Run 'ng lint'
 npm run lint
