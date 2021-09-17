@@ -12,7 +12,7 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "prepare": "husky install",
-    "autoformat": "prettier --config .prettierrc --write 'src/**/*.{js,json,ts,scss,html}'"
+    "autoformat": "prettier --config .prettierrc --write \"src/**/*.{js,json,ts,scss,html}\""
   },
   "private": true,
   "dependencies": {
