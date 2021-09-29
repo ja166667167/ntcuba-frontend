@@ -19,11 +19,7 @@
           <h2>輸入密碼 :</h2>
           <mat-form-field appearance="fill">
             <mat-label>請輸入密碼</mat-label>
-            <input
-              matInput
-              type="password"
-              [(ngModel)]="Password1"
-            />
+            <input matInput type="password" [(ngModel)]="Password1" />
           </mat-form-field>
         </div>
         <div *ngIf="!checkPasswordLength()">
@@ -34,11 +30,7 @@
         <h2>重新輸入密碼 :</h2>
         <mat-form-field appearance="fill">
           <mat-label>請重新輸入密碼</mat-label>
-          <input
-            matInput
-            type="password"
-            [(ngModel)]="Password2"
-          />
+          <input matInput type="password" [(ngModel)]="Password2" />
         </mat-form-field>
       </div>
       <div *ngIf="!checkSecPassword()">
@@ -47,9 +39,7 @@
     </div>
 
     <div class="buttons">
-      <button mat-raised-button (click)="Allcheck()">
-        送出
-      </button>
+      <button mat-raised-button (click)="Allcheck()">送出</button>
     </div>
   </mat-card>
 </div>

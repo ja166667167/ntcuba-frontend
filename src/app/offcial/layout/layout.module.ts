@@ -18,10 +18,6 @@ import { TeamsComponent } from '../pages/teams/teams.component';
     RecordsComponent,
     TeamsComponent,
   ],
-  imports: [
-    CommonModule,
-    MaterialModule,
-    LayoutRoutingModule,
-  ],
+  imports: [CommonModule, MaterialModule, LayoutRoutingModule],
 })
 export class LayoutModule {}

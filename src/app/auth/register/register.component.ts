@@ -40,10 +40,7 @@ export class RegisterComponent {
     return false;
   }
   checkPassword() {
-    if (
-      this.checkPasswordLength() &&
-      this.checkSecPassword()
-    ) {
+    if (this.checkPasswordLength() && this.checkSecPassword()) {
       return true;
     } else {
       if (!this.checkPasswordLength()) {

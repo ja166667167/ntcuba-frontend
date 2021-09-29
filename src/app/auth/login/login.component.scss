@@ -1,0 +1,65 @@
+.loginPage {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-weight: bolder;
+  display: flex;
+  text-align: center;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.loginCard {
+  height: 600px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.enterLines {
+  // border: 5px solid red;
+  // height: 300px;
+  // width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.enterLine {
+  // border: 5px solid darkblue;
+  height: 100px;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+h2 {
+  // border: 5px solid green;
+  display: flex;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+mat-form-field {
+  // border: 5px solid green;
+  display: flex;
+}
+.buttons {
+  // border: 5px solid green;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 100px;
+}
+button {
+  padding: 10px 20px;
+}
+
+@font-face {
+  font-family: Noto Sans TC;
+  src: url(/src/assets/Font/NotoSansTC-Regular.otf);
+}

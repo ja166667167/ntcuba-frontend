@@ -6,16 +6,16 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
-      import('./offcial/layout/layout.module').then(
-        (m) => m.LayoutModule
-      ),
+      import('./offcial/layout/layout.module').then((m) => m.LayoutModule),
   },
   {
     path: 'admin',
     loadChildren: () =>
-      import('./workbench/workbench.module').then(
-        (m) => m.WorkbenchModule
-      ),
+      import('./workbench/workbench.module').then((m) => m.WorkbenchModule),
+  },
+  {
+    path: 'auth',
+    loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
   },
   {
     path: '**',
