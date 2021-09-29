@@ -1,1 +1,32 @@
-<p>login works!</p>
+<div class="loginPage">
+  <h1 class="title">登入</h1>
+  <mat-card class="loginCard">
+    <div class="enterLines">
+      <div class="enterLine">
+        <h2>帳號 :</h2>
+        <mat-form-field appearance="fill">
+          <mat-label>Account</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+      <div class="enterLine">
+        <h2>密碼 :</h2>
+        <mat-form-field appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button mat-raised-button>確認</button>
+      <button
+        routerLink="/register"
+        routerLinkActive="active"
+        mat-raised-button
+      >
+        註冊
+      </button>
+    </div>
+  </mat-card>
+</div>

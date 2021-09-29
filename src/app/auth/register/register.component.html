@@ -1,0 +1,55 @@
+<div class="Page">
+  <h1 class="title">註冊</h1>
+  <mat-card class="Card">
+    <div class="enterLines">
+      <div class="withErrorMessage">
+        <div class="enterLine">
+          <h2>輸入帳號 :</h2>
+          <mat-form-field appearance="fill">
+            <mat-label>請輸入帳號名稱</mat-label>
+            <input matInput [(ngModel)]="UserName" />
+          </mat-form-field>
+        </div>
+        <div *ngIf="!checkUser()">
+          <h5>帳號格式錯誤!!!</h5>
+        </div>
+      </div>
+      <div class="withErrorMessage">
+        <div class="enterLine">
+          <h2>輸入密碼 :</h2>
+          <mat-form-field appearance="fill">
+            <mat-label>請輸入密碼</mat-label>
+            <input
+              matInput
+              type="password"
+              [(ngModel)]="Password1"
+            />
+          </mat-form-field>
+        </div>
+        <div *ngIf="!checkPasswordLength()">
+          <h5>密碼格式錯誤!!!</h5>
+        </div>
+      </div>
+      <div class="enterLine">
+        <h2>重新輸入密碼 :</h2>
+        <mat-form-field appearance="fill">
+          <mat-label>請重新輸入密碼</mat-label>
+          <input
+            matInput
+            type="password"
+            [(ngModel)]="Password2"
+          />
+        </mat-form-field>
+      </div>
+      <div *ngIf="!checkSecPassword()">
+        <h5>輸入密碼不同!!!</h5>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button mat-raised-button (click)="Allcheck()">
+        送出
+      </button>
+    </div>
+  </mat-card>
+</div>

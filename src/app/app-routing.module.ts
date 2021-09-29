@@ -5,11 +5,17 @@ import { PageNotFoundComponent } from './share/component/page-not-found/page-not
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./offcial/layout/layout.module').then((m) => m.LayoutModule),
+    loadChildren: () =>
+      import('./offcial/layout/layout.module').then(
+        (m) => m.LayoutModule
+      ),
   },
   {
     path: 'admin',
-    loadChildren: () => import('./workbench/workbench.module').then((m) => m.WorkbenchModule),
+    loadChildren: () =>
+      import('./workbench/workbench.module').then(
+        (m) => m.WorkbenchModule
+      ),
   },
   {
     path: '**',

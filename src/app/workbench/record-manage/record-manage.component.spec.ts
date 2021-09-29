@@ -1,4 +1,7 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {
+  ComponentFixture,
+  TestBed,
+} from '@angular/core/testing';
 
 import { RecordManageComponent } from './record-manage.component';
 
@@ -13,7 +16,9 @@ describe('RecordManageComponent', () => {
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RecordManageComponent);
+    fixture = TestBed.createComponent(
+      RecordManageComponent
+    );
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
